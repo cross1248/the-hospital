@@ -1,0 +1,182 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#scrollButton {
+    width: 80%;
+    max-width: 250px;
+    font-size: 1em;
+    padding: 10px 30px;
+}
+
+.lightbox-title {
+    font-size: 22px;
+    padding: 8px 0;
+}
+
+.link1 {
+    font-size: 0.9em;
+}
+
+.glow-txt {
+    font-size: 1em;
+}
+
+@keyframes letterSpacing {
+    0%, 100% { letter-spacing: 1px; }
+    50% { letter-spacing: 5px; }
+}
+ 
+@keyframes reveal {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes noise {
+    0%, 100% {
+        text-shadow: 0 0 3px rgba(255, 69, 0, 0.2);
+    }
+    50% {
+        text-shadow: 1px 2px 5px rgba(255, 69, 0, 0.4);
+    }
+}
+
+@keyframes glowing {
+    0%, 100% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    33% {
+        color: purple;
+        text-shadow: 0 0 10px purple;
+    }
+    66% {
+        color: darkgreen;
+        text-shadow: 0 0 10px darkgreen;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes pglow {
+    0% {
+        text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 12px rgba(255, 0, 0, 0.9);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+body, .glowing, .link1, .glow-txt {
+    font-size: calc(14px + 0.2vw);
+}
+
+#discord-title {
+    font-size: calc(1em + 0.5vw);
+}
+
+#scrollButton:hover {
+    box-shadow: 0 0 15px rgba(255, 140, 0, 1);
+}
+
+.vimg1, .vimg2 {
+    width: 30px;
+}
+
+@media (min-width: 600px) {
+    .vimg1, .vimg2 {
+        width: 40px;
+    }
+}
+
+.end-message {
+    padding: 10px;
+    font-size: calc(12px + 0.3vw);
+}
+
+@media (min-width: 768px) {
+    .end-message {
+        padding: 20px;
+        font-size: calc(14px + 0.3vw);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .red-box-container {
+        max-height: 400px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .red-box-container {
+        max-height: 300px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .red-box-container {
+        max-height: 200px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 100%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 100%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner img {
+        object-position: center calc(50% + 1px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner img {
+        object-position: center calc(50% + 0.5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 20vh;
+    }
+    
+    .banner img {
+        object-position: center center; 
+    }
+}

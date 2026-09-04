@@ -1,0 +1,157 @@
+<!-- ♰ Website made by cross ♰ -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>♰ CR0$$</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style22.css">
+    <link rel="stylesheet" href="responsive22.css">
+    <link rel="icon" type="image/png" href="imgz/vr.png">
+    <link rel="apple-touch-icon" href="imgz/vr.png">
+
+    <meta name="description" content="Skids who got clipped.
+
+    Website made by lorna(cross) |
+
+    Join us here > https://discord.gg/eknZdffevd">
+    <meta name="keywords" content="lorna, discord nuking, lorna, chaos">
+    <meta name="author" content="lorna">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="♰ CR0$$">
+    <meta property="og:description" content="Skids who got clipped.">
+
+</head>
+<body class="main-background">
+<div class="red-box-container">
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class="btn-primary">Home</a></li>
+            <li><a href="clips.html" class="btn-primary2">Clips</a></li>
+            <li>
+            <a href="hall.html"
+            id="hallBtn"
+            class="btn-primary3 new-button">
+                Hall
+            </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="imgz/hacked.png" alt="Cross Banner">
+    </div>
+</div>   
+
+<section class="section2">
+    <h2 class="section2-title">Clips</h2>
+<p class="section2-description">
+    This page is dedicated to (old) clips that were recorded and edited by <u>lorna(cross)</u>, usually clips of hacked skids. 
+    If you want to watch newer clips, visit our
+    <a href="https://discord.gg/eknZdffevd" target="_blank" class="discord-link">
+        Discord
+    </a>.
+</p>
+    <!-- <div class="counter-container">
+        <p class="hitcount-label"><b>Hit Counter:</b></p>
+        <a href='https://pflegedienstvergleichen.de/'>Pflegedienstvergleichen.de</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4c6969707a7d2491e59264117c1be5fc3a51ca66'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1333931/t/5"></script>
+    </div> -->
+</section>
+
+<div class="search-bar">
+    <input type="text" id="searchInput" onkeyup="searchVids()" placeholder="Search for clips...">
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <video id="plyr-player-1" playsinline controls>
+            <source src="clipz/clip1.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">nsfw larptrenkl ikea server gets nuked by <span class="glowing">LORNA(CROSS)</span>.</div>
+    </div>
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <video id="plyr-player-1" playsinline controls>
+            <source src="clipz/clip2.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">nasty pedophile gets sanctified by <span class="glowing">LORNA(CROSS)</span>.</div>
+    </div>
+</div>
+
+<p class="end-message">You've reached the end... More clips are coming soon.⠀-⠀<a href="trashbin.html" target="_blank"><img class="vimg1" src="imgz/kurosu.png"></a>
+
+<!-- <li><a href="chat.html" class="btn4">Trashbin</a></li>  --> <!-- soon -->
+
+<footer class="footer">
+    <p><b>&copy; 2026 BL00DB4TH HOSPITAL. Website made by <a href="https://discord.gg/eknZdffevd" class="glowing" target="_blank">LORNA(CROSS)</a></b></p>
+</footer>
+<div id="newNotice" class="new-notice">
+    ⬆ New: Hall of Torment
+</div>
+
+<script>
+let animatedtitles = ["♰ THE HOSPITAL", "/eknZdffevd", "Skids 𝐰𝐡𝐨 𝐠𝐨𝐭 𝐜𝐥𝐢𝐩𝐩𝐞𝐝", "𝐌𝐚𝐝𝐞 𝐛𝐲 LORNA(CROSS)"];
+    let index = 0;  
+        setInterval(function() {
+            document.title = animatedtitles[index % animatedtitles.length];  
+            index++; 
+        }, 1100);
+
+function searchVids() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toUpperCase();
+    const videoGrid = document.querySelectorAll('.video-container');
+
+    videoGrid.forEach(video => {
+        const caption = video.querySelector('.caption').textContent;
+        if (caption.toUpperCase().includes(filter)) {
+            video.style.display = "";
+        } else {
+            video.style.display = "none";
+        }
+    });
+}
+const hallBtn = document.getElementById("hallBtn");
+const notice = document.getElementById("newNotice");
+
+const observer = new IntersectionObserver(([entry]) => {
+    notice.style.display = entry.isIntersecting ? "none" : "block";
+});
+
+observer.observe(hallBtn);
+
+notice.addEventListener("click", () => {
+    hallBtn.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    hallBtn.classList.add("highlight");
+
+    setTimeout(() => {
+        hallBtn.classList.remove("highlight");
+    }, 2000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".vimg1");
+
+    images.forEach(img => {
+        img.addEventListener("mouseleave", function () {
+            if (img.classList.contains("vimg1")) {
+                img.classList.replace("vimg1", "vimg2");
+            } else {
+                img.classList.replace("vimg2", "vimg1");
+            }
+        });
+    });
+});
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"f5445ff749e241bb801d42f914197aaf","r":1}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a29c4a704e0903db',t:'MTc4NjUwNDI2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
