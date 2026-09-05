@@ -1,7 +1,7 @@
 body {
     background-color: #0a0507;
     color: #ffb6c1;
-    font-family: 'UnifrakturMaguntia', Georgia, serif;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -371,7 +371,7 @@ footer {
 
 .footer p {
     margin-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
     font-size: 14px;
 }
 
@@ -814,32 +814,32 @@ body.lightbox-open {
 
 .glowing {
     animation: glowingPink 3s infinite;
-    font-family: 'MingLiU-ExtB', sans-serif;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
 }
 
 .glowing.blue {
     animation: glowingPink 3s infinite;
     font-weight: bold;
     color: #dda0dd;
-    font-family: 'MingLiU-ExtB', sans-serif; 
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
 }
 
 .glowing.custom-font {
     animation: glowingPink 3s infinite;
-    font-family: 'MingLiU-ExtB', sans-serif;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
     font-size: 15px;
 }
 
 .glowing.standard {
     animation: glowingPink 3s infinite;
-    font-family: 'MingLiU-ExtB', sans-serif; 
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
 }
 
 h1.glowing {
     animation: glowingPinkRed 3s infinite;
     font-size: 3em;
     color: #ff69b4;
-    font-family: 'MingLiU-ExtB', sans-serif; 
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
 }
 
 @keyframes glowingPink {
@@ -1229,7 +1229,7 @@ iframe:hover {
     border-bottom: 3px solid black;
     border-radius: 6px;
     font-size: 1.1em;
-    font-family: 'Cinzel', serif;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
     cursor: pointer;
     text-align: center;
     display: block;
@@ -1250,7 +1250,7 @@ iframe:hover {
 }
 
 #discord-title {
-    font-family: 'Cinzel', serif;
+    font-family: 'Patrick Hand', 'Nunito', 'Comic Sans MS', cursive, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     color: #ff69b4;
