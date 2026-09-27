@@ -1,5 +1,5 @@
 /* ♰ Website made by lorna(cross) ♰ */
-const text = "Welcome to BLOODBATH...";
+const text = "Welcome to WATCH PEOPLE HACKED";
 let i = 0;
 function typeWriter() {
     if (i < text.length) {
