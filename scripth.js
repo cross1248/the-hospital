@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "ArrowRight") changeImage(1);
     });
     let index = 0;
-    let animatedTitles = ["𝐌𝐨𝐧𝐮𝐦𝐞𝐧𝐭𝐬 𝐨𝐟 Torment", "/2k5XNaUSEm", "𝐇𝐚𝐥𝐥 𝐨𝐟 SHAMEEEEE ♰", "𝐌𝐚𝐝𝐞 𝐛𝐲 CR0$$"];
+    let animatedTitles = ["𝓗𝓪𝓬𝓴𝓮𝓻𝓼 𝓖𝓮𝓽𝓽𝓲𝓷𝓰 𝓗𝓪𝓬𝓴𝓮𝓭", "/eknZdffevd", "𝓗𝓐𝓛𝓛 𝓞𝓕 𝓢𝓚𝓘𝓓𝓢 ♰", "𝐌𝐚𝐝𝐞 𝐛𝐲 𝓴𝓪𝓽𝓲𝓮"];
     setInterval(() => {
         document.title = animatedTitles[index % animatedTitles.length];
         index++;
