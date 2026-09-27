@@ -1,5 +1,5 @@
 /* ♰ Website made by lorna(cross) ♰ */
-const text = "Welcome to WATCH PEOPLE HACKED";
+const text = "Welcome to BLOODBATH...";
 let i = 0;
 function typeWriter() {
     if (i < text.length) {
@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-let originalTitle = "♰ THE HOSPITAL";
-let animatedTitles = ["♰ BLOODBATH", "♰ クロス", "/eknZdffevd", "FORGET", "𝐌𝐚𝐝𝐞 𝐛𝐲 LORNA(CROSS)"];
+let originalTitle = "♰ 𝓦𝓐𝓣𝓒𝓗 𝓟𝓔𝓞𝓟𝓛𝓔 𝓗𝓐𝓒𝓚𝓔𝓓";
+let animatedTitles = ["♰ 𝓐𝓣𝓣𝓐𝓒𝓚𝓔𝓡𝓢 𝓖𝓔𝓣 𝓐𝓣𝓣𝓐𝓒𝓚𝓔𝓓", "♰ クロス", "/eknZdffevd", "𝓑𝓛𝓔𝓢𝓢𝓘𝓝𝓖", "𝐌𝐚𝐝𝐞 𝐛𝐲 KATIE"];
 let index = 0;
 setInterval(() => {
     document.title = animatedTitles[index % animatedTitles.length];
